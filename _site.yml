@@ -16,6 +16,8 @@ navbar:
       href: mailto:<sp3694@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/<sp3694>/
+    - text: "Cool Plots"
+      href: plots.html
 output:
   html_document:
     theme: flatly
