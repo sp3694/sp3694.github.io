@@ -1,16 +1,16 @@
 ---
 title: ""
-output: 
-  html_document:
-    toc: true
-    toc_float: true
-    
+
+  
 ---
 
 ## About me
 
+
 Hi there! My name is Stephen Powers, and I am a graduate student at Columbia University studying Epidemiology. During summer 2019, I traveled to Ireland and Iceland. Below is an image of me next to a waterfall in Iceland called "Skógafoss." 
 
-<img src = "./IMG_1204.JPG" style = "width:75%">
+<img src = "./IMG_1204.JPG" style = "width:75%; border:10px solid; margin-right: 20px" align="left">
+
+
 
 

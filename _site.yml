@@ -1,7 +1,7 @@
-name: "Yay internet!"
+name: "Stephen Powers"
 output_dir: "."
 navbar:
-  title: "Home"
+  title: "Stephen Powers"
   left: 
     - text: "Education"
       href: education.html
