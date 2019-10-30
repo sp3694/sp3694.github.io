@@ -1,0 +1,24 @@
+---
+title: "Experience"
+---
+
+#### **Data Analyst**
+Columbia University Mailman School of Public Health, New York, NY
+Supervisor – Dr. Daniel Belsky
+Columbia University Aging Center
+
+*  Data analysis (SAS and R)
+
+*  Grant writing, assist in IRB submissions, manuscript preparation and presentation of materials for conferences and lecture
+
+#### **International Development Intern**
+Gevity Consulting Inc, New York, NY
+Supervisor – Dr. Patrick Saunders-Hastings
+
+* Area of focus: Electronic health records, drug safety and effectiveness, innovative methods (artificial intelligence)
+
+* Provide literature review support to advance understanding of current state of practice in epidemiology
+
+* Provide quantitative data analysis
+
+* Support drafting of technical reports
