@@ -19,7 +19,7 @@ data("rest_inspec")
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Number of restaraunt ratings by neighborhood
 
 ```{r chartA}
 rest_inspec %>% 
@@ -27,7 +27,7 @@ rest_inspec %>%
   count(boro) %>% 
   mutate(boro = fct_reorder(boro, n)) %>% 
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar") %>% 
-  layout(title = "Number of restaraunt ratings by neighborhood",
+  layout(
       xaxis = list(title = "neighborhood"), 
       yaxis = list(title = "count")
       )
@@ -36,7 +36,7 @@ rest_inspec %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Restaraunt ratings by neighborhood
 
 ```{r chartB}
 rest_inspec %>% 
@@ -44,13 +44,13 @@ rest_inspec %>%
   sample_n(1000) %>% 
   plot_ly(y = ~score, color = ~boro, type = "box",
           colors = "Set2") %>% 
-  layout(title = "Restaraunt ratings by neighborhood",
+  layout(
       xaxis = list(title = "neighborhood"), 
       yaxis = list(title = "score")
       )
 ```
 
-### Chart C
+### Restaraunt ratings by neighborhood with inspection violation description
 
 ```{r chartC}
 rest_inspec  %>% 
@@ -63,7 +63,7 @@ rest_inspec  %>%
   layout(yaxis = list(
       type = 'date',
       range = c("2014","2017"))) %>% 
-  layout(title = "Restaraunt ratings by neighborhood with inspection violation description",
+  layout(
       xaxis = list(title = "score"), 
       yaxis = list(title = "inspection date")
       )
