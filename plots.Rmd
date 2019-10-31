@@ -1,5 +1,5 @@
 ---
-title: "Plots"
+title: "NYC Restaraunt Ratings"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -26,7 +26,11 @@ rest_inspec %>%
   filter(boro != "Missing") %>% 
   count(boro) %>% 
   mutate(boro = fct_reorder(boro, n)) %>% 
-  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar") %>% 
+  layout(title = "Number of restaraunt ratings by neighborhood",
+      xaxis = list(title = "neighborhood"), 
+      yaxis = list(title = "count")
+      )
 ```
 
 Column {data-width=350}
@@ -39,7 +43,11 @@ rest_inspec %>%
   mutate(boro = fct_reorder(boro, score)) %>% 
   sample_n(1000) %>% 
   plot_ly(y = ~score, color = ~boro, type = "box",
-          colors = "Set2")
+          colors = "Set2") %>% 
+  layout(title = "Restaraunt ratings by neighborhood",
+      xaxis = list(title = "neighborhood"), 
+      yaxis = list(title = "score")
+      )
 ```
 
 ### Chart C
@@ -54,7 +62,11 @@ rest_inspec  %>%
     color = ~grade, text = ~text_label, alpha = 0.75) %>% 
   layout(yaxis = list(
       type = 'date',
-      range = c("2014","2017")))
+      range = c("2014","2017"))) %>% 
+  layout(title = "Restaraunt ratings by inspection date and neighborhood with inspection violation description",
+      xaxis = list(title = "score"), 
+      yaxis = list(title = "inspection date")
+      )
 ```
 
 
