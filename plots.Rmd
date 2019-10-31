@@ -63,7 +63,7 @@ rest_inspec  %>%
   layout(yaxis = list(
       type = 'date',
       range = c("2014","2017"))) %>% 
-  layout(title = "Restaraunt ratings by inspection date and neighborhood with inspection violation description",
+  layout(title = "Restaraunt ratings by neighborhood with inspection violation description",
       xaxis = list(title = "score"), 
       yaxis = list(title = "inspection date")
       )
