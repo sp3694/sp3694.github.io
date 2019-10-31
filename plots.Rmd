@@ -1,17 +1,23 @@
 ---
 title: "Plots"
-output: html_document
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
+library(flexdashboard)
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(plotly)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r include = FALSE}
 data("rest_inspec")
@@ -30,17 +36,34 @@ rest_inspec %>%
 
 ```
 
-```{r}
+```{r echo=FALSE}
 plot1 = 
   rest_inspec %>% 
     ggplot(aes(x = boro, fill = grade)) +
     geom_bar(position = "dodge") +
-    theme_minimal()
+    theme_minimal() 
 
 ggplotly(plot1)
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
 ```{r}
 
 ```
+
+### Chart C
+
+```{r}
+
+```
+
+
+```{r}
+rmarkdown::render("plots.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
+
 
