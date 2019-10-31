@@ -21,7 +21,7 @@ Column {data-width=650}
 
 ### Chart A
 
-```{r}
+```{r chartA}
 rest_inspec %>% 
   filter(boro != "Missing") %>% 
   count(boro) %>% 
@@ -34,7 +34,7 @@ Column {data-width=350}
 
 ### Chart B
 
-```{r}
+```{r chartB}
 rest_inspec %>% 
   mutate(boro = fct_reorder(boro, score)) %>% 
   sample_n(1000) %>% 
@@ -44,7 +44,7 @@ rest_inspec %>%
 
 ### Chart C
 
-```{r}
+```{r chartC}
 rest_inspec  %>% 
   filter(grade %in% c("A", "B", "C"), boro != "Missing") %>%
   mutate(text_label = str_c(dba, violation_description)) %>% 
