@@ -50,7 +50,7 @@ rest_inspec %>%
       )
 ```
 
-### Restaraunt ratings by neighborhood with name and grade
+### Restaraunt ratings by inspection date with name and grade
 
 ```{r chartC}
 rest_inspec  %>% 
