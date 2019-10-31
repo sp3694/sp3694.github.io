@@ -2,9 +2,11 @@
 title: "Experience"
 ---
 
+##
+##
+<img src = "./Images/Rstudio.png" style = "width:30%; height:15%">
 
-<img src = "./Images/Rstudio.png" style = "width:50%; height:25%">
-
+##
 #### **Data Analyst**
 ##### Columbia University Mailman School of Public Health, New York, NY
 ##### Supervisor – Dr. Daniel Belsky
