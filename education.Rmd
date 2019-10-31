@@ -2,14 +2,23 @@
 title: "Education"
 ---
 
+<img src = "./Images/ColumbiaUni.jpg" style = "width:50%; height:25%">
 
 #### **Columbia Unversity** 
 ##### Mailman School of Public Health 
 
+##
+##
+##
+<img src = "./Images/wfu.jpeg" style = "width:50%; height:25%">
 
 #### **Wake Forest University** 
 ##### Health and Exercise Science
 
+##
+##
+##
+<img src = "./Images/alabamauni.jpg" style = "width:50%; height:25%">
 
 #### **University of Alabama** 
 ##### Health and Exercise science 
