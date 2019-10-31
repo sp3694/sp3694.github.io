@@ -50,12 +50,12 @@ rest_inspec %>%
       )
 ```
 
-### Restaraunt ratings by neighborhood with inspection violation description
+### Restaraunt ratings by neighborhood with name and grade
 
 ```{r chartC}
 rest_inspec  %>% 
   filter(grade %in% c("A", "B", "C"), boro != "Missing") %>%
-  mutate(text_label = str_c(dba, violation_description)) %>% 
+  mutate(text_label = str_c("Name: ", dba, '\nGrade: ', grade)) %>% 
   sample_n(1000) %>% 
   plot_ly(
     x = ~score, y = ~inspection_date, type = "scatter", mode = "markers",
